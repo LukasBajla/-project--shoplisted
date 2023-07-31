@@ -1,0 +1,38 @@
+{
+  "shopItems": [
+    {
+      "title": "Milk",
+      "tags": [
+        "DAIRY\n",
+        "MILK\n"
+      ],
+      "bought": true,
+      "id": 7
+    },
+    {
+      "title": "Bacon",
+      "tags": [
+        "MEAT\n"
+      ],
+      "bought": true,
+      "id": 9
+    },
+    {
+      "title": "Toast Bread",
+      "tags": [
+        "BREAD\n"
+      ],
+      "bought": false,
+      "id": 10
+    },
+    {
+      "title": "Eggs",
+      "tags": [
+        "EGGS\n",
+        "NUTRITION\n"
+      ],
+      "bought": true,
+      "id": 11
+    }
+  ]
+}

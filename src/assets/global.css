@@ -1,0 +1,158 @@
+:root {
+  --clr-primary-400: #66be2b;
+  --clr-primary-800: #2e5811;
+
+  --clr-correct-400: #66be2b;
+  --clr-wrong-400: #ca2c2c;
+  --clr-wrong-800: #3f161b;
+
+  --clr-neutral-200: #cecbdb;
+  --clr-neutral-300: #bdbbc7;
+  --clr-neutral-500: #313036;
+  --clr-neutral-600: #1c1b22;
+  --clr-neutral-700: #222129;
+  --clr-neutral-750: #35313d;
+  --clr-neutral-800: #151418;
+
+  --ff-primary:  'Roboto', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --fw-light: 300;
+  --fw-thin: 100;
+
+  --fs-300: 0.65rem;
+  --fs-350: 0.72rem;
+  --fs-400: 0.8rem;
+  --fs-450: 1.2rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-800: 3rem;
+
+  --border-radius: 0.3em;
+}
+
+/* --------- RESETS ----*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+  text-align: initial;
+}
+img,
+picture,
+i,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------ BASE ------*/
+html {
+  color-scheme: dark light;
+  font-family: var(--ff-primary);
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: var(--fs-400);
+}
+h1 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-black);
+  text-transform: uppercase;
+}
+h2 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+}
+button {
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  font-weight: var(--fw-black);
+  border-radius: var(--border-radius); 
+}
+button:hover {
+  cursor: pointer;
+  
+}
+input,
+textarea {
+  border-radius: var(--border-radius);
+  padding: 0.5em .7em;
+  outline: none;
+  border: 2px solid transparent;
+  transition: border .25s ease-in-out;
+  box-shadow: 2px 2px 3px 0px hsla(0, 0%, 0%, 0.1);
+}
+input:hover,
+textarea:hover {
+  border: 2px solid var(--clr-primary-400);
+
+}
+input:focus,
+textarea:focus {
+  border: 2px solid var(--clr-primary-800);
+}
+
+body {
+  display: grid;
+  /* place-items: center; */
+  /* background-color: gold; */
+}
+
+/* ----------- PROJECT --------*/
+
+/* -------- UTLITY ---------*/
+
+.container {
+  width: min(90vw, 60em);
+  margin: 0 auto;
+  /* background-color: violet; */
+}
+.error {
+  color: var(--clr-wrong-400);
+}
+
+.btn-primary {
+  background-color: var(--clr-primary-400);
+  transition: background-color 0.25s ease-in-out;
+  box-shadow: 2px 2px 5px 0px hsla(0, 0%, 0%, 0.2);
+  border: 2px solid transparent;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  border: 2px solid var(--clr-primary-400);
+}
+
+.btn-secondary {
+  font-size: var(--fs-400);
+  opacity: .2;
+  background: var(--clr-neutral-800);
+  border: 2px solid var(--clr-neutral-800);
+  transition: 
+  opacity .25s ease-in-out,
+  background-color .25s ease-in-out;
+}
+.btn-secondary:hover:not(.active) {
+  border: 2px solid transparent;
+    background: var(--clr-neutral-800);
+    opacity: .8;
+}

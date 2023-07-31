@@ -1,19 +1,7 @@
-# shopping-list
+# SHOPLISTED
+  ### WORK IN PROGRESS !
 
-## Project setup
-```
-npm install
-```
+  <br>
+  The ultimate web-app for organizing your shopping items, recipes and more !
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
